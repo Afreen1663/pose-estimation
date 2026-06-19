@@ -1,4 +1,4 @@
-# Pose Estimation & Classification — OpenCV + MediaPipe
+# Pose Estimation & Classification using OpenCV + MediaPipe
 
 Detect human body landmarks in images and live webcam video, then classify the pose into **Warrior II**, **T-Pose**, or **Tree Pose** using joint-angle heuristics. Built with Google's MediaPipe Pose model and OpenCV.
 
@@ -14,19 +14,18 @@ Detect human body landmarks in images and live webcam video, then classify the p
 - [Evaluation](#evaluation)
 - [Limitations](#limitations)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 ## Overview
 
 This project uses [MediaPipe](https://github.com/google-ai-edge/mediapipe)'s pre-trained Pose model to detect 33 body landmarks in an image or video frame, then applies a rule-based classifier — built on the angles between key joints — to recognize three poses: **Warrior II**, **T-Pose**, and **Tree Pose**. It works on static images and in real time from a webcam.
 
 ## Demo
+Input 
+<img width="625" height="810" alt="image" src="https://github.com/user-attachments/assets/bbe19749-6a3f-45b5-949d-6f8d3caf3574" />
 
-| Input | Output |
-|---|---|
-| _Add a sample input image here_ | _Add the corresponding classified output here_ |
 
-> Replace this section with a couple of before/after screenshots once you've run the notebook — it makes the repo far more convincing at a glance.
+Output
+<img width="625" height="810" alt="image" src="https://github.com/user-attachments/assets/58ef4a50-20b0-42f0-aec1-5f4c8b98fd8a" />
 
 ## Features
 
@@ -146,6 +145,3 @@ The system is evaluated informally based on:
 - Add repetition counting for fitness-tracking use cases.
 - Package as a web or mobile app.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
